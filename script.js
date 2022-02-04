@@ -3,6 +3,9 @@ const svgLogoHtml = document.createElement("div");
 svgLogoHtml.classList.add('svg-container');
 svgLogoHtml.innerHTML = svgLogo;
 
+// init scrolling effect
+AOS.init();
+
 setInterval(() => {
     var randomh = Math.round(Math.random()*(innerHeight-300));
     var randomw = Math.round(Math.random()*(innerWidth-300));
@@ -11,5 +14,5 @@ setInterval(() => {
     svgLogoHtml.style.left = randomw+"px";
     svgLogoHtml.style.top = randomh+"px";
     svgLogoHtml.style.transform = "rotate("+randomRotation+"deg)";
-    document.getElementById("header").appendChild(svgLogoHtml);
+    document.getElementById("header").before(svgLogoHtml);
 }, 4000);

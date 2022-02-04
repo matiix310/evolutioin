@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/3aceb2ae95.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div id="page-container">
@@ -16,13 +17,32 @@
                 <div class="spacer-50"></div>
                 <h1 class="text-pop-up-top">EVOLUTION : MATIIX</h1>
                 <div class="spacer-100"></div>
-                <i class="fas fa-angle-double-down arrow-down"></i>
+                <i class="fas fa-angle-double-down arrow-down" id="scrollArrow"></i>
             </div>
         </div>
+        <svg class="header-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 260">
+            <polygon points="0 138.8 268 205.3 597.09 205.3 845 157.3 1104.15 205.3 1371 251.3 1582 171.3 1844.06 195.05 1920 159.32 1919.5 0 0 0 0 138.8"/>
+        </svg>
         <div id="first-content">
-            Coucou
+            <div class="paragraph-container">
+                <div class="image-container" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="assets/firstLogo.png" alt="First Logo" width="100%">
+                </div>
+                <div class="text-container">
+                        <span>Octobre 2019</span> <br> <br> Mon premier logo, historique est indémodable. On le vois surement mainteant qu'il est affiché en gros, mais il y a pas mal d'erreurs
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./script.js"></script>
+<script>
+    $('.arrow-down').on('click', function(e) {
+        $('html, body').animate({
+            scrollTop: $(window).height()
+        }, 1200);
+	});
+</script>
 </html>
