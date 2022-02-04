@@ -1,2 +1,2 @@
 # evolutioin
-Just a simple web page.
+Une histoire, une page web.
