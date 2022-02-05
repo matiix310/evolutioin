@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/3aceb2ae95.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./external/aos.css" rel="stylesheet">
 </head>
 <body>
     <div id="page-container">
@@ -36,9 +36,11 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./external/aos.js"></script>
 <script src="./script.js"></script>
 <script>
+    AOS.init();
+
     $('.arrow-down').on('click', function(e) {
         $('html, body').animate({
             scrollTop: $(window).height()

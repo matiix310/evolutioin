@@ -3,9 +3,6 @@ const svgLogoHtml = document.createElement("div");
 svgLogoHtml.classList.add('svg-container');
 svgLogoHtml.innerHTML = svgLogo;
 
-// init scrolling effect
-AOS.init();
-
 setInterval(() => {
     var randomh = Math.round(Math.random()*(innerHeight-300));
     var randomw = Math.round(Math.random()*(innerWidth-300));
