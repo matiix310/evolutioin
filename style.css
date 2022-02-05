@@ -143,13 +143,13 @@ body::-webkit-scrollbar {
     font-weight: 600;
 }
 
-.text-container span::after {
+.text-container span::before {
     content: '';
     position: absolute;
     background: #ffda55;
-    width: 70px;
+    width: 60px;
     height: 5px;
-    transform: translate(-100%, 60px);
+    transform: translateY(60px);
     border-radius: 10px;
 }
 
@@ -170,7 +170,7 @@ body::-webkit-scrollbar {
     position: absolute;
     width: 40%;
     height: 5px;
-    background: #1841b3;
+    background: #ffda55;
     border-radius: 10px;
     transform: translateY(-50px);
     animation: line-loop 20s ease-in-out infinite;
