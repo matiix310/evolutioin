@@ -8,7 +8,17 @@
     <script src="https://kit.fontawesome.com/3aceb2ae95.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
-    <link href="./external/aos.css" rel="stylesheet">
+
+    <meta property="og:title" content="Matiix : Evolution" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://matiix310.github.io/evolution" />
+    <meta property="og:image" content="https://matiix310.github.io/evolution/assets/Logo4.png" />
+    <meta property="og:description" content="Ce site retrace l'évolution des logos de Matiix310" />
+    <meta name="theme-color" content="#ffda55">
+
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image">
+
 </head>
 <body>
     <div id="page-container">
@@ -32,14 +42,12 @@
                 <path d="M1033.66 70.5268C1055.16 42.5267 1120.66 36.5268 1132 85.0268C1143.34 133.527 1100.5 106.527 1081.5 117.027C1062.5 127.527 1059.16 167.138 1033.66 150.138C1008.16 133.138 1012.16 98.5268 1033.66 70.5268Z" fill="#F9D969"/>
             </svg>
 
-            <div class="menu-selector">
-                <span class="active"></span>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="menu-selector"></div>
+
+            <div class="images-container">
+                <div class="images-panel"></div>
             </div>
 
-            <div class="images-container"></div>
             <div class="text-container">
 
                 <div class="description-container">
@@ -57,15 +65,14 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="./external/aos.js"></script>
 <script src="./script.js"></script>
 <script>
-    AOS.init();
 
     $('.arrow-down').on('click', function(e) {
         $('html, body').animate({
             scrollTop: document.body.scrollHeight - $(window).height()
         }, 1200);
 	});
+
 </script>
 </html>
