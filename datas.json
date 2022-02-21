@@ -1,0 +1,12 @@
+{
+    "06/10/2015": {
+        "name": "Mon premier logo youtube",
+        "path": "./assets/firstLogo.png",
+        "description": "Un logo sympa, mais qui comporte pas mal de defauts."
+    },
+    "10/05/2016": {
+        "name": "Mon deuxième logo youtube",
+        "path": "./assets/firstLogo.png",
+        "description": "Un logo sympa, mais qui comporte pas mal de defauts."
+    }
+}
