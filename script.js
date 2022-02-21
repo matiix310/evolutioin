@@ -13,3 +13,13 @@ setInterval(() => {
     svgLogoHtml.style.transform = "rotate("+randomRotation+"deg)";
     document.getElementById("header").before(svgLogoHtml);
 }, 4000);
+
+$('.menu-selector').on('click', (e) => {
+    if (!e.target.nodeName === "SPAN" || e.target.classList.contains('active')) return;
+
+    $('.menu-selector').find('span').each((index, element) => {
+        element.classList.remove('active');
+    });
+
+    e.target.classList.add('active');
+})

@@ -23,23 +23,20 @@
         <svg class="header-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 260">
             <polygon points="0 138.8 268 205.3 597.09 205.3 845 157.3 1104.15 205.3 1371 251.3 1582 171.3 1844.06 195.05 1920 159.32 1919.5 0 0 0 0 138.8"/>
         </svg>
+
         <div id="firstContent">
-            <div class="paragraph-container">
-                <div class="image-container" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="assets/firstLogo.png" alt="First Logo" width="100%">
-                </div>
-                <div class="text-container">
-                        <span>Octobre 2019</span> <br> <br> <h1>Mon premier logo, historique et indémodable. On le vois surement maintenant qu'il est affiché en gros, mais il y a pas mal d'erreurs.</h1>
-                </div>
-            </div>
-        </div>
+            <svg class="bubbles-bg" width="1370" height="730" viewBox="0 0 1370 730" xmlns="http://www.w3.org/2000/svg">
+                <path d="M380.657 594.111C402.157 566.111 451.157 552.111 467.657 573.111C484.157 594.111 495.657 659.611 467.657 681.111C439.657 702.611 406.157 698.111 380.657 681.111C355.157 664.111 359.157 622.111 380.657 594.111Z" fill="#F9D969"/>
+                <path d="M15.6568 47.1112C30.5 -10.4999 68.3432 -11.6111 83.5 29.5C98.6568 70.6111 119.5 74 102.657 108C85.8137 142 41.1568 151.111 15.6568 134.111C-9.84319 117.111 0.813641 104.722 15.6568 47.1112Z" fill="#F9D969"/>
+                <path d="M1257.66 26.111C1279.16 -1.88901 1311 34 1327.5 55C1344 76 1372.66 91.611 1344.66 113.111C1316.66 134.611 1306.5 130.111 1281 113.111C1255.5 96.111 1236.16 54.111 1257.66 26.111Z" fill="#F9D969"/>
+                <path d="M1033.66 70.5268C1055.16 42.5267 1120.66 36.5268 1132 85.0268C1143.34 133.527 1100.5 106.527 1081.5 117.027C1062.5 127.527 1059.16 167.138 1033.66 150.138C1008.16 133.138 1012.16 98.5268 1033.66 70.5268Z" fill="#F9D969"/>
+            </svg>
 
-        <div class="yellowContainer">
-            <div class="image-container">
-
-            </div>
-            <div class="text-container">
-
+            <div class="menu-selector">
+                <span></span>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
@@ -52,7 +49,7 @@
 
     $('.arrow-down').on('click', function(e) {
         $('html, body').animate({
-            scrollTop: $(window).height()
+            scrollTop: document.body.scrollHeight - $(window).height()
         }, 1200);
 	});
 </script>
