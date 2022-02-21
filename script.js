@@ -22,10 +22,17 @@ $('.menu-selector').on('click', (e) => {
     });
 
     e.target.classList.add('active');
+
+    // set new datas
+    index = $('.menu-selector').find('span').index(e.target);
+    if (index >= 0) setNewDatas(index);
 })
 
 
 // datas managment
+
+let datas;
+
 function readJsonFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -39,5 +46,13 @@ function readJsonFile(file, callback) {
 }
 
 readJsonFile("./datas.json", (data) => {
-    console.log(data);
+    datas = data.datas;
+
+    // init
+    setNewDatas(0);
 });
+
+function setNewDatas(index) {
+    $('.description').text(datas[index].description);
+    $('.date').text(datas[index].date);
+}

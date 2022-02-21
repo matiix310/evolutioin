@@ -218,7 +218,7 @@ body::-webkit-scrollbar {
     height: 100%;
 }
 
-.descrition-container {
+.description-container {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -231,13 +231,13 @@ body::-webkit-scrollbar {
     overflow: hidden;
 }
 
-.descrition-container .date {
+.description-container .date {
     transform: translateX(-5%);
     font-size: 7vh;
     margin-bottom: 7%;
 }
 
-.descrition-container .descrition {
-    font-size: 3vh;
+.description-container .description {
+    font-size: 4vh;
     text-align: center;
 }
