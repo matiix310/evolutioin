@@ -38,6 +38,7 @@ readJsonFile("./datas.json", (data) => {
     setNewDatas(0);
     initImages(datas);
     initMenuSelector(datas);
+    scrollTo(0);
 });
 
 function setNewDatas(index) {
@@ -45,39 +46,52 @@ function setNewDatas(index) {
     $('.date').text(datas[index].date);
 }
 
+let selectedIndex = 0;
+
+window.onresize = function() {
+    initImages(datas);
+    initMenuSelector(datas);
+    scrollTo(selectedIndex);
+}
+
 
 // init images in the menu
 
 function initImages(datas) {
 
-    datas.forEach(image => {
-        let path = image.path;
-        const imageElement = document.createElement('img');
-        imageElement.setAttribute('src', path);
-        $('.images-panel').append(imageElement);
-    });
+    if($('.images-panel').find('img').length == 0) {
+
+        datas.forEach(image => {
+            let path = image.path;
+            const imageElement = document.createElement('img');
+            imageElement.setAttribute('src', path);
+            $('.images-panel').append(imageElement);
+        });
+    }
 
     // set css properties
     let itemCount = datas.length;
     $('.images-panel').css({'height': ((innerWidth/10)*(itemCount-1) + (innerWidth/100)*15 + (itemCount+1)*(innerWidth/50)) +'px'});
     $('.images-panel').css({'margin-top': (innerHeight/2 - ((innerWidth/100)*15)/2) +'px'});
-
-    scrollTo(0);
 }
 
 // init menu selector
 
 function initMenuSelector(datas) {
-    for (let i=0; i < datas.length; i++) {
-        const spanElement = document.createElement('span');
-        $('.menu-selector').append(spanElement);
-    }
 
-    // select first one
-    $('.menu-selector').find('span')[0].classList.add('active');
+    if ($('.menu-selector').find('span').length == 0) {
+        for (let i=0; i < datas.length; i++) {
+            const spanElement = document.createElement('span');
+            $('.menu-selector').append(spanElement);
+        }
+    
+        // select first one
+        $('.menu-selector').find('span')[0].classList.add('active');
+    }
 
     // set css properties
     const itemCount = datas.length;
+    console.log(itemCount)
     $('.menu-selector').css({'height': ((itemCount-1)*30 + 50 + (itemCount-1)*15) +'px'});
 }
 
@@ -116,4 +130,11 @@ function scrollTo(index) {
         element.classList.remove('active');
     });
     $('.images-panel').find('img')[index].classList.add('active');
+
+    $('.menu-selector').find('span').each((index, element) => {
+        element.classList.remove('active');
+    });
+
+    $('.menu-selector').find('span')[index].classList.add('active');
+    selectedIndex = index;
 }

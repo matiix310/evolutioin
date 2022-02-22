@@ -1,28 +1,46 @@
 {
     "datas": [
         {
-            "date": "20/10/2015",
+            "date": "03/10/2019",
             "name": "Mon premier logo youtube",
             "path": "./assets/Logo1.png",
-            "description": "Le Lorem Ipsum est simplement du faux de cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son "
+            "description": "C'est mon premier logo. franchement pas mal pour un début, mais il comporte quand même pas mal de defaults."
         },
         {
-            "date": "10/05/2016",
+            "date": "22/02/2020",
             "name": "Mon deuxième logo youtube",
             "path": "./assets/Logo2.png",
-            "description": "Un logo htrsrhhrhsympa, mais qui comporte pas mal de defauts."
+            "description": "Les couleurs ne vous rappelle rien ? (indice: Fort----). Oui... J'ai osé. Bon après ce logo n'a pas servi à grand chose."
         },
         {
-            "date": "10/05/2020",
+            "date": "23/01/2021",
             "name": "Mon deuxième logo youtube",
             "path": "./assets/Logo3.png",
-            "description": "Un logo sympa, mais qui comporte pas mal dreggregge defauts."
+            "description": "Pour ce logo, l'inspiration a été Scorpion, la série TV. Il a été fait uniquement avec des cercles"
         },
         {
-            "date": "10/05/2021",
+            "date": "21/03/2021",
             "name": "Mon deuxième logo youtube",
             "path": "./assets/Logo4.png",
-            "description": "Un logo sympa, mais quitjtyjjj comporte pas mal de defauts."
+            "description": "J'ai voulu allez sur un logo un peu plus \"design\" pour decouvrir le potentiel d'Adobe Illustrator et je suis pas déçu du résultat."
+        },
+        {
+            "date": "04/10/2021",
+            "name": "Mon deuxième logo youtube",
+            "path": "./assets/Logo5.png",
+            "description": "Lui, c'est plus un concept qu'un logo. L'idée c'était de mettre toutes les lettres de Matiix dans le logo, mais ça le rend illisible en petit format."
+        },
+        {
+            "date": "21/11/2021",
+            "name": "Mon deuxième logo youtube",
+            "path": "./assets/Logo6.png",
+            "description": "Ce logo est surement le plus réussi de tous. Ils est claire, lisible et simple. C'est aussi avec ce logo que j'ai commencé à utilisé la couleur jaune."
+        },
+        {
+            "date": "04/02/2022",
+            "name": "Mon deuxième logo youtube",
+            "path": "./assets/Logo7.png",
+            "description": "Le dernier logo en date. Simple, épuré et puissant. Toujours avec la couleur jaune, sa forme géometrique en fait un logo pouvant être utilisé un peu partout."
         }
     ]
 }
